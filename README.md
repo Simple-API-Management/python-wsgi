@@ -9,6 +9,8 @@ $ pip install simple-api-management-wsgi
 
 ## Usage
 
+Get your API key from our [_Simple API Management_](https://www.simpleapimanagement.com/) UI. your API key will be displayed after signign up and creating an API.
+
 ```python
 def identifier(environ, app):
     return environ['REMOTE_ADDR']
