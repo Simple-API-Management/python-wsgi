@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="simple-api-management-wsgi", # Replace with your own username
-    version="0.1.0",
+    name="simple-api-management-wsgi",
+    version="0.2.0",
     author="Simple API Management",
     author_email="sascha@simpleapimanagement.com",
     long_description=long_description,

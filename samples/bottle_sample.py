@@ -1,13 +1,14 @@
 
 import bottle
-from middleware import SimpleAPIManagementMiddleware
+from simpleapimanagement import SimpleAPIManagementMiddleware
 from bottle import route, run, template
 
-def identifier(environ):
+def identifier(environ, app):
     return environ['REMOTE_ADDR']
 
 simple_api_management_options = {
-    'KEY': 'add your key here'
+    'KEY': 'add your key here',
+    'IDENTIFIER': identifier #optional
 }
 
 app = SimpleAPIManagementMiddleware(bottle.app(), simple_api_management_options)
